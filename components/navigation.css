@@ -1,0 +1,13 @@
+footer nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  border: solid 2px black;
+  position: absolute;
+  bottom: 0px;
+  padding: 2px 2px;
+}
+
+footer img {
+  padding: 5px;
+}
