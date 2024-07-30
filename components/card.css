@@ -3,21 +3,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: lightgray;
+  background-color: #f3edc8;
   margin-top: 0.75rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
   padding: 0.5rem;
+  border-radius: 8px;
 }
 
-.button--show-answer {
-  background-color: green;
-  color: white;
-  border-radius: 5px;
-  margin: 10px 0;
-  padding: 5px;
+/* Make sure the last card is not covered by the footer */
+.card:last-child {
+  margin-bottom: 50px;
 }
 
 .bookmark {
   position: absolute;
-  right: 0;
-  top: -10px;
+  top: 5px;
+  right: 10px;
 }
