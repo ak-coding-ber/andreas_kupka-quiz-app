@@ -16,6 +16,11 @@
   margin-bottom: 50px;
 }
 
+/* Make sure the last card is not covered by the footer */
+.card:first-child {
+  margin-top: 65px;
+}
+
 .bookmark {
   position: absolute;
   top: 5px;
