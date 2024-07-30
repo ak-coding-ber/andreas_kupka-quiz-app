@@ -11,5 +11,6 @@ main {
   flex-direction: column;
   border: solid 2px black;
   height: 100%;
+  width: 100%;
   background-color: #bf3131;
 }

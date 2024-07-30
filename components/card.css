@@ -26,3 +26,27 @@
   top: 5px;
   right: 10px;
 }
+
+.card ul {
+  display: flex;
+  list-style: none;
+  align-self: flex-start;
+}
+
+.tags {
+  display: flex;
+  align-content: flex-start;
+}
+
+.tags li {
+  font-size: smaller;
+  background-color: #bf3131;
+  margin: 0.4rem 0.2rem;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  color: #f3edc8;
+}
+
+.answer {
+  padding: 0.5rem;
+}
