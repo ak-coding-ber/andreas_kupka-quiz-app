@@ -1,0 +1,23 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray;
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+}
+
+.button--show-answer {
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.bookmark {
+  position: absolute;
+  right: 0;
+  top: -10px;
+}
