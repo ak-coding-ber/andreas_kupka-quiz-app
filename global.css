@@ -6,6 +6,12 @@
   line-height: 1.6;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -13,4 +19,5 @@ main {
   height: 100%;
   width: 100%;
   background-color: #bf3131;
+  overflow: auto;
 }
