@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Quiz-App</h1>
+    </header>
+    <main>
+      <section class="card card--profile-img">
+        <img
+          style="width: 100px; border-radius: 50%; margin: 2rem 0"
+          src="./img/me.jpg"
+          alt="your profile image"
+        />
+        <p>Andreas Kupka</p>
+      </section>
+      <section class="card card--profile-about">
+        <h2 style="align-self: flex-start">About Me</h2>
+        <p style="align-self: flex-start">
+          I am Andreas, a developer, musician and photographer from Berlin.
+        </p>
+      </section>
+      <section class="card card--profile-counter">
+        <!-- <button class="button button--show-answer"><img src="./img/circle-help-black.svg" alt="questionmark icon">Click Me</button>
+        <button class="button button--show-answer"><img src="./img/bookmark-black.svg" alt="bookmark icon">Click Me</button> -->
+        <div class="counters counters--questions">
+          <img src="./img/circle-help-black.svg" alt="questionmark icon" />
+          <p>5</p>
+        </div>
+        <div class="counters counters--bookmarked">
+          <img src="./img/bookmark-check-black.svg" alt="questionmark icon" />
+          <p>2</p>
+        </div>
+      </section>
+      <section class="card card--profile-settings">
+        <h2>Settings</h2>
+        <br />
+        <div style="display: flex; gap: 1rem">
+          <p>Dark Mode</p>
+          <img
+            src="./img/toggle-left-black.svg"
+            alt="toggle-icon darkmode deactivated"
+          />
+          <p>Off</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <a href="./index.html"
+          ><img id="home-button" src="./img/house-black.svg" alt="home button"
+        /></a>
+        <a href="./bookmarks.html"
+          ><img
+            id="bookmark-save"
+            src="./img/bookmark-black.svg"
+            alt="bookmark button"
+        /></a>
+        <a href="./profile.html"
+          ><img
+            style="background-color: #bf3131"
+            id="profile-button"
+            src="./img/circle-user-round-black.svg"
+            alt="profile button"
+        /></a>
+      </nav>
+    </footer>
+  </body>
+</html>

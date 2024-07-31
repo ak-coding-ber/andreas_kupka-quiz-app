@@ -21,6 +21,28 @@
   margin-top: 65px;
 }
 
+.card--profile-img {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  margin-top: 5rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #f3edc8;
+  font-size: 1.5rem;
+}
+
+.card--profile-counter {
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: transparent;
+}
+
 .bookmark {
   position: absolute;
   top: 5px;
