@@ -20,6 +20,21 @@
 .card:first-child {
   margin-top: 65px;
 }
+.card--profile1 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  margin-top: 0.75rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #f3edc8;
+  font-size: 1.5rem;
+}
 
 .bookmark {
   position: absolute;
