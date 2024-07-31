@@ -21,3 +21,7 @@ main {
   background-color: #bf3131;
   overflow: auto;
 }
+
+nav a {
+  line-height: 0px;
+}
