@@ -20,13 +20,14 @@
 .card:first-child {
   margin-top: 65px;
 }
+
 .card--profile-img {
   position: relative;
   display: flex;
   flex-direction: row;
   gap: 30px;
   align-items: center;
-  margin-top: 0.75rem;
+  margin-top: 5rem;
   margin-left: 0.75rem;
   margin-right: 0.75rem;
   padding: 0.5rem;
