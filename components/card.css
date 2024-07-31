@@ -20,7 +20,7 @@
 .card:first-child {
   margin-top: 65px;
 }
-.card--profile1 {
+.card--profile-img {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -34,6 +34,12 @@
   background-color: transparent;
   color: #f3edc8;
   font-size: 1.5rem;
+}
+
+.card--profile-counter {
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: transparent;
 }
 
 .bookmark {

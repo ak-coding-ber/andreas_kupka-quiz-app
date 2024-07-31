@@ -25,3 +25,11 @@ main {
 nav a {
   line-height: 0px;
 }
+
+.counters {
+  display: flex;
+  gap: 1rem;
+  background-color: #f3edc8;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
