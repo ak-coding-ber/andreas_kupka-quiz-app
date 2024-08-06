@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header>
@@ -46,11 +47,14 @@
         </ul>
       </section>
       <section class="card">
-        <img
-          class="bookmark bookmark--save"
-          src="./img/bookmark-black.svg"
-          alt="button save as bookmark"
-        />
+        <button type="toggle" data-js="bookmark-button">
+          <img
+            class="bookmark bookmark--save"
+            src="./img/bookmark-black.svg"
+            alt="button save as bookmark"
+            data-js="bookmark-img"
+          />
+        </button>
         <h3>Question 3</h3>
         <p class="question">
           What is the term for a unique address that identifies a specific
