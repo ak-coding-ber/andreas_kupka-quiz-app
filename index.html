@@ -13,11 +13,14 @@
     </header>
     <main>
       <section class="card">
-        <img
-          class="bookmark bookmark--save"
-          src="./img/bookmark-check-black.svg"
-          alt="button save as bookmark"
-        />
+        <button type="toggle" data-js="bookmark-button-1">
+          <img
+            class="bookmark bookmark--save"
+            src="./img/bookmark-check-black.svg"
+            alt="button save as bookmark"
+            data-js="bookmark-img-1"
+          />
+        </button>
         <h3>Question 1</h3>
         <p class="question">What property flips the axis in flexbox?</p>
         <button class="button button--hide-answer">Hide Answer</button>
@@ -33,6 +36,7 @@
           class="bookmark bookmark--save"
           src="./img/bookmark-check-black.svg"
           alt="button save as bookmark"
+          data-js="bookmark-img-1"
         />
         <h3>Question 2</h3>
         <p class="question">
@@ -47,14 +51,11 @@
         </ul>
       </section>
       <section class="card">
-        <button type="toggle" data-js="bookmark-button">
-          <img
-            class="bookmark bookmark--save"
-            src="./img/bookmark-black.svg"
-            alt="button save as bookmark"
-            data-js="bookmark-img"
-          />
-        </button>
+        <img
+          class="bookmark bookmark--save"
+          src="./img/bookmark-black.svg"
+          alt="button save as bookmark"
+        />
         <h3>Question 3</h3>
         <p class="question">
           What is the term for a unique address that identifies a specific
