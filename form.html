@@ -12,24 +12,31 @@
       <h1>Quiz-App</h1>
     </header>
     <main>
-      <form
-        action="
-      "
-      ></form>
+      <section class="card card--form">
+        <form id="form-new-card" data-js="form-new-card">
+          <fieldset>
+            <legend><h2>Add a New Quiz-Card</h2></legend>
+            <label for="details">Your Question</label>
+            <textarea
+              class="input-text-box"
+              name="details"
+              id="details"
+              rows="5"
+              placeholder="Please enter your question here."
+            ></textarea>
+            <label for="details">Your Answer</label>
+            <textarea
+              class="input-text-box"
+              name="details"
+              id="details"
+              rows="5"
+              placeholder="Please enter your answer here."
+            ></textarea>
+            <button class="button button--submit" type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
-    <form data-js="form">
-      <fieldset>
-        <legend>Personal Information</legend>
-        <label for="first-name">First Name</label>
-        <input
-          type="text"
-          name="firstName"
-          id="first-name"
-          placeholder="Your first name"
-        />
-        <button type="submit">Complain now!</button>
-      </fieldset>
-    </form>
     <footer>
       <nav>
         <a href="./index.html"
