@@ -14,24 +14,26 @@
     <main>
       <section class="card card--form">
         <form id="form-new-card" data-js="form-new-card">
-          <fieldset>
+          <fieldset style="border: 0;">
             <legend><h2>Add a New Quiz-Card</h2></legend>
-            <label for="details">Your Question</label>
+            <label for="question">Your Question</label>
             <textarea
+              id="question"
               class="input-text-box"
-              name="details"
-              id="details"
+              name="question"
               rows="5"
               placeholder="Please enter your question here."
             ></textarea>
-            <label for="details">Your Answer</label>
+            <label for="answer">Your Answer</label>
             <textarea
+              id="answer"
               class="input-text-box"
-              name="details"
-              id="details"
+              name="answer"
               rows="5"
               placeholder="Please enter your answer here."
             ></textarea>
+            <label for="tag">Tag</label>
+            <input type="text" id="tag" name="tag" placeholder="Enter a tag"> </input>
             <button class="button button--submit" type="submit">Submit</button>
           </fieldset>
         </form>
