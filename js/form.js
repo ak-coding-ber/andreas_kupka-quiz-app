@@ -1,4 +1,9 @@
 const formNewCard = document.querySelector('[data-js="form-new-card"]');
+const questionInput = document.querySelector("#question");
+const answerInput = document.querySelector("#answer");
+const charCountText1 = document.querySelector("[data-js='char-count-1']");
+const charCountText2 = document.querySelector("[data-js='char-count-2']");
+
 // number of cards existing - I put 0 for now
 let numberCards = 0;
 
@@ -49,6 +54,25 @@ formNewCard.addEventListener("submit", (e) => {
 
   //reset form to initial state - clear all fields
   e.target.reset();
+  // count for characters left need to be initialized again as well
+  charCountText1.textContent = `150 characters left`;
+  charCountText2.textContent = `150 characters left`;
 
   // create an array of user answers and return it as function output
+});
+
+questionInput.addEventListener("input", () => {
+  // get length of question-input-string and calculate chars left
+  const inputLength = questionInput.value.length;
+  const maxLength = questionInput.maxLength;
+  const charsLeft = maxLength - inputLength;
+  charCountText1.textContent = `${charsLeft} characters left`;
+});
+
+answerInput.addEventListener("input", () => {
+  // get length of answer-input-string and calculate chars left
+  const inputLength = answerInput.value.length;
+  const maxLength = answerInput.maxLength;
+  const charsLeft = maxLength - inputLength;
+  charCountText2.textContent = `${charsLeft} characters left`;
 });
