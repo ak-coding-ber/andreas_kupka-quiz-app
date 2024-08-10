@@ -6,4 +6,12 @@
 
 .input-text-box {
   width: 100%;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+#tag {
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px grey solid;
 }
