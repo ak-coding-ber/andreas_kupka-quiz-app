@@ -18,11 +18,11 @@ answerButton.addEventListener("click", () => {
     answerButton.classList.remove("button--show-answer");
     answerButton.classList.add("button--hide-answer");
     answerButton.textContent = "Hide Answer";
-    answerText.style.display = "flex";
+    answerText.classList.remove("hidden");
   } else {
     answerButton.classList.remove("button--hide-answer");
     answerButton.classList.add("button--show-answer");
     answerButton.textContent = "Show Answer";
-    answerText.style.display = "none";
+    answerText.classList.add("hidden");
   }
 });
