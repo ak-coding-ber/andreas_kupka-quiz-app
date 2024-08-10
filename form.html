@@ -15,7 +15,7 @@
       <section class="card card--form">
         <form id="form-new-card" data-js="form-new-card">
           <fieldset style="border: 0;">
-            <legend><h2>Add a New Quiz-Card</h2></legend>
+            <legend><h2>Add A New Quiz-Card</h2></legend>
             <label for="question">Your Question</label>
             <textarea
               id="question"
@@ -23,7 +23,9 @@
               name="question"
               rows="5"
               placeholder="Please enter your question here."
+              maxlength="150"
             ></textarea>
+            <p class="char-count" data-js="char-count-1">150 characters left</p>
             <label for="answer">Your Answer</label>
             <textarea
               id="answer"
@@ -31,7 +33,9 @@
               name="answer"
               rows="5"
               placeholder="Please enter your answer here."
+              maxlength="150"
             ></textarea>
+            <p class="char-count" data-js="char-count-2">150 characters left</p>
             <label for="tag">Tag</label>
             <input type="text" id="tag" name="tag" placeholder=" Enter a tag"> </input>
             <button type="submit" class="button button--submit">Submit</button>
