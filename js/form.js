@@ -1,6 +1,6 @@
 const formNewCard = document.querySelector('[data-js="form-new-card"]');
-const questionInput = document.querySelector("#question");
-const answerInput = document.querySelector("#answer");
+const questionInput = document.querySelector("[data-js='question-input']");
+const answerInput = document.querySelector("[data-js='answer-input']");
 const charCountText1 = document.querySelector("[data-js='char-count-1']");
 const charCountText2 = document.querySelector("[data-js='char-count-2']");
 
@@ -8,6 +8,14 @@ const charCountText2 = document.querySelector("[data-js='char-count-2']");
 let numberCards = 0;
 
 console.log(formNewCard);
+
+// general function to calculate and update the remaining characters for a text-input field
+function updateCharCount(inputSource, outputElement) {
+  const inputLength = inputSource.value.length;
+  const maxLength = inputSource.maxLength;
+  const charsLeft = maxLength - inputLength;
+  outputElement.textContent = `${charsLeft} characters left`;
+}
 
 formNewCard.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -61,18 +69,11 @@ formNewCard.addEventListener("submit", (e) => {
   // create an array of user answers and return it as function output
 });
 
+// update chars left count in case there is an input change in the question or answer input boxes
 questionInput.addEventListener("input", () => {
-  // get length of question-input-string and calculate chars left
-  const inputLength = questionInput.value.length;
-  const maxLength = questionInput.maxLength;
-  const charsLeft = maxLength - inputLength;
-  charCountText1.textContent = `${charsLeft} characters left`;
+  updateCharCount(questionInput, charCountText1);
 });
 
 answerInput.addEventListener("input", () => {
-  // get length of answer-input-string and calculate chars left
-  const inputLength = answerInput.value.length;
-  const maxLength = answerInput.maxLength;
-  const charsLeft = maxLength - inputLength;
-  charCountText2.textContent = `${charsLeft} characters left`;
+  updateCharCount(answerInput, charCountText2);
 });
