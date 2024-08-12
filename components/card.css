@@ -49,6 +49,12 @@
   background-color: transparent;
 }
 
+.card--profile-settings {
+  height: 20%;
+  justify-content: space-evenly;
+  overflow: show;
+}
+
 .bookmark {
   position: absolute;
   top: 5px;
