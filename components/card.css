@@ -37,6 +37,12 @@
   font-size: 1.5rem;
 }
 
+#profile-img {
+  width: 120px;
+  border-radius: 50%;
+  margin: 2rem 0;
+}
+
 .card--profile-counter {
   flex-direction: row;
   justify-content: space-evenly;
