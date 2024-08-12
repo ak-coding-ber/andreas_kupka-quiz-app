@@ -83,6 +83,9 @@
 
 .answer {
   padding: 0.5rem;
+  background-color: #ead196;
+  border-radius: 5px;
+  border: 1px solid;
 }
 
 .hidden {
