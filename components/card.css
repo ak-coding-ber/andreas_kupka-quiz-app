@@ -9,6 +9,7 @@
   margin-right: 0.75rem;
   padding: 0.5rem;
   border-radius: 8px;
+  box-shadow: 5px 5px #7d0a0a;
 }
 
 /* Make sure the last card is not covered by the footer */
@@ -35,12 +36,35 @@
   background-color: transparent;
   color: #f3edc8;
   font-size: 1.5rem;
+  box-shadow: none;
+}
+
+#profile-img {
+  width: 120px;
+  border-radius: 50%;
+  margin: 2rem 0;
+  box-shadow: 5px 5px #7d0a0a;
 }
 
 .card--profile-counter {
   flex-direction: row;
   justify-content: space-evenly;
   background-color: transparent;
+  box-shadow: none;
+}
+
+.counters--questions {
+  box-shadow: 5px 5px #7d0a0a;
+}
+
+.counters--bookmarked {
+  box-shadow: 5px 5px #7d0a0a;
+}
+
+.card--profile-settings {
+  height: 20%;
+  justify-content: space-evenly;
+  overflow: show;
 }
 
 .bookmark {
@@ -71,6 +95,9 @@
 
 .answer {
   padding: 0.5rem;
+  background-color: #ead196;
+  border-radius: 5px;
+  border: 1px solid;
 }
 
 .hidden {
